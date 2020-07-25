@@ -1,0 +1,185 @@
+/* 轮播 */
+#banner {
+    >div {
+        ol {
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+
+            li {
+                width: 10px;
+                height: 10px;
+                margin: 0 3px;
+                border: 1px solid #fff;
+                border-radius: 10px;
+                background: none;
+                box-sizing: border-box;
+
+                &.active {
+                    width: 12px;
+                    height: 12px;
+                    background: #fff;
+                }
+            }
+        }
+
+        .carousel-inner {
+            img {
+                height: 290px;
+            }
+        }
+    }
+}
+
+
+/* 三大特色 */
+#el-feature {
+    margin-top: 20px;
+
+    >div {
+        >div {
+            width: 33%;
+            padding-left: 80px;
+
+            h5 {
+                color: #333;
+                font-size: 18px;
+            }
+
+            p {
+                color: #999;
+                font-size: 14px;
+            }
+        }
+
+        >div:nth-child(1) {
+            background: url('../images/feature01.png') no-repeat;
+        }
+
+        >div:nth-child(2) {
+            background: url('../images/feature02.png') no-repeat;
+        }
+
+        >div:nth-child(3) {
+            background: url('../images/feature03.png') no-repeat;
+        }
+    }
+
+}
+
+
+/* 进行中的投资 */
+#loan {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e8e8e8;
+
+        span {
+            border-bottom: 3px solid #2e8ece;
+            font-size: 24px;
+            color: #2e8ece;
+            font-weight: bold;
+        }
+
+        a {
+            padding: 6px 12px;
+            color: #2e8ece;
+        }
+    }
+
+    table {
+        thead {
+            tr {
+                td {
+                    border: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    &.text-info {
+                        color: #31708f;
+
+                    }
+
+                    a {
+                        font-size: 12px;
+                        color: #fff;
+                        background: #d9534f;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        min-width: 44px;
+                        display: block;
+                        width: 44px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#information {
+    margin-bottom: 20px;
+
+    div {
+        div {
+            margin-bottom: 20px;
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                margin-bottom: 16px;
+                border-bottom: 1px solid #eee;
+
+                span {
+                    font-size: 24px;
+                    color: #2e8ece;
+                    font-weight: bold;
+                    border-bottom: 3px solid #2e8ece;
+                }
+
+                a {
+                    font-size: 14px;
+                    color: #2e8ece;
+                    padding: 6px 12px;
+
+                    &:hover {
+                        color: #23527c;
+                    }
+                }
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    &:hover a {
+                        color: #0099dd;
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+
+                    list-style: none;
+                    border-bottom: 1px solid #eee;
+                    line-height: 38px;
+
+                    a {
+                        font-size: 14px;
+                        color: #555;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

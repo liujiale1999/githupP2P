@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <!-- 引入bootstrap.min.css -->
+    <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
+    <!-- 登录样式 -->
+    <link rel="stylesheet" href="./dist/css/register.min.css">
+</head>
+
+<body>
+
+
+    <!-- 顶部 -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">首页</a>
+                    <ul class="navbar-nav  mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">快速注册</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">帮助</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="userLogin">
+        <div class="container">
+            <img src="./images/logo.png" alt="">
+            <span>用户注册</span>
+        </div>
+    </section>
+
+
+    <section id="login" class="container">
+        <div>
+            <div class="title">用户注册</div>
+            <div class="loginform ">
+                <form action="">
+                    <p>请填写注册信息，点击“提交注册”即可完成注册！</p>
+                    <div>
+                        &emsp;用户名&emsp;&emsp; <input type="text">
+                        <p class="msg">用户名为2~16位字母，数字，符号或中文</p>
+                    </div>
+                    <div>
+                        &emsp;密&emsp;码&emsp;&emsp; <input type="password">
+                        <p class="msg">密码为6~16位字符组成,采用数字、字母、符号安全性更高</p>
+                    </div>
+                    <div>
+                        确认密码&emsp;&emsp;
+                        <input type="password">
+                        <p class="msg">请再次填写密码</p>
+                    </div>
+                    <div><input type="submit" value="同意协议并注册  "><a href="#">已有账号，马上登录</a></div>
+                    <p><a href="#">《使用协议说明书》</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="col-sm-8 left">
+                <p>专业Java培训、PHP培训、Android培训机构</p>
+
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625
+                </p>
+                <p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+
+                <a href="#">蜀ICP备14030149号-1</a>  <a href="#">蜀公网安备510114990541</a>
+            </div>
+            <div class="col-sm-4 right row">
+                <div class="col-sm-6">
+                    <p>官方微博:</p>
+                    <a href="#"><img src="./images/tecent.png" alt=""></a>
+                    <a href="#"><img src="./images/sina.png" alt=""></a>
+
+                </div>
+                <div class="col-sm-6">
+                    <p>官方微信:</p>
+                    <a href="#"><img src="./images/wx.jpg" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- 引入jquery -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 引入popper.min.js -->
+    <script src="./lib/popper/popper.min.js"></script>
+    <!-- 引入bootstrap.min.js -->
+    <script src="./lib/bootstrap4/js/bootstrap.min.js"></script>
+    <!-- 引入register.js -->
+    <script src="./js/register.js"></script>
+</body>
+
+</html>
