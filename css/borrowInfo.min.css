@@ -1,70 +1,12 @@
-body {
-  user-select: none;
-}
-#header-nav {
-  background: #333;
-}
-#header-nav svg {
-  width: 25px;
-  margin-bottom: 7px;
-  height: 25px;
-}
-#header-nav ul li {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-#header-nav ul li a {
-  color: #fff;
-  padding: 10px 15px;
-  font-size: 14px;
-}
-#header-nav ul li a.active {
-  color: #00a8ff;
-  font-weight: bold;
-}
-#header-nav ul li a:hover {
-  color: #00a8ff;
-}
-#header-nav em {
-  font-size: 24px;
-}
-#header-nav .navbar-brand {
-  height: 50px;
-}
-#header-nav nav {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#nav {
-  background: #f8f8f8;
-  border-bottom: 1px solid #e7e7e7;
-  margin-bottom: 10px;
-}
-#nav nav {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#nav nav ul a {
-  height: 80px;
-  line-height: 80px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 16px;
-  min-width: 80px;
-  text-align: center;
-}
-#nav nav ul a.active {
-  background: #e7e7e7;
-}
-#nav nav ul a:hover {
-  color: #0099dd;
-  background: #f0f0f0;
-}
 #main {
   /* 借款人 */
   /* 借款人信息 */
+  /* 材料信息 */
+  /* 还款情况 */
+  /* 投标记录 */
+}
+#main > .row {
+  margin-bottom: 20px;
 }
 #main > .row > .row-left > div {
   border: 1px solid #ddd;
@@ -162,6 +104,7 @@ body {
 }
 #main > .BorrowerInformation {
   border: 1px solid #ddd;
+  border-radius: 4px;
   margin-bottom: 20px;
 }
 #main > .BorrowerInformation > h4 {
@@ -169,34 +112,96 @@ body {
   font-size: 14px;
   padding: 10px 15px;
   margin: 0;
+  border-bottom: 1px solid #ddd;
 }
 #main > .BorrowerInformation > div {
   padding: 15px;
 }
+#main > .BorrowerInformation > div table {
+  margin-bottom: 0;
+}
 #main > .BorrowerInformation > div table tr td {
   border: none;
   padding: 0;
+  color: #999;
 }
 #main > .BorrowerInformation > div table tr td span {
   color: #0099dd;
   margin-left: 10px;
 }
-footer {
-  background-color: #f8f8f8;
+#main > .Material {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
-footer > div {
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-footer .left p {
-  margin-bottom: 10px;
+#main > .Material > h4 {
+  background: #f5f5f5;
   font-size: 14px;
+  padding: 10px 15px;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+#main > .Material > div {
+  padding: 15px;
+}
+#main > .Material > div table {
+  margin-bottom: 0;
+}
+#main > .Material > div table tr td {
+  border: none;
+  padding: 8;
   color: #333;
+  font-weight: bold;
 }
-footer .right img {
-  width: 100%;
+#main > .Material > div table tbody {
+  background-color: #f9f9f9;
 }
-footer .right > div {
-  padding: 0px 5px;
+#main > .Repayment {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#main > .Repayment > h4 {
+  background: #f5f5f5;
+  font-size: 14px;
+  padding: 10px 15px;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+#main > .Repayment > div table thead td {
+  color: #333;
+  padding: 8px;
+  font-weight: bold;
+}
+#main > .Repayment > div table tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+#main > .Repayment > div table tbody td {
+  padding: 8px;
+}
+#main > .tenderRecords {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#main > .tenderRecords > h4 {
+  background: #f5f5f5;
+  font-size: 14px;
+  padding: 10px 15px;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+#main > .tenderRecords > div table thead td {
+  color: #333;
+  padding: 8px;
+  font-weight: bold;
+}
+#main > .tenderRecords > div table tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+#main > .tenderRecords > div table tbody td {
+  padding: 8px;
+}
+#main > .tenderRecords > div table tbody .textInfo {
+  color: #0099dd;
 }

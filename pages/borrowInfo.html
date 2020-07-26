@@ -6,95 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>借款详情</title>
     <!-- 引入bootstrap.min.css -->
-    <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap4/css/bootstrap.min.css">
     <!-- 借款详情样式 -->
     <link rel="stylesheet" href="../dist/css/borrowInfo.min.css">
 </head>
 
 <body>
-    <!-- 顶部导航 -->
-    <header id="header-nav">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">首页</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">登录</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">快速注册</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">小强</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">账户充值</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">注销</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">帮助</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- 网页导航 -->
-    <section id="nav">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/logo.png" alt="">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link " href="#">首页</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">我要投资</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">我要借款</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">个人中心</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">新手指引</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">关于我们</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-    </section>
+   
 
 
     <!-- 内容部分 -->
@@ -105,7 +23,7 @@
                 <div>
                     <h4>借款人</h4>
                     <div>
-                        <img src="./dist/images/head_icon.jpg" alt="">
+                        <img src="../dist/images/head_icon.jpg" alt="">
                         <a href="#">zs</a>
                         <p>籍贯： 四川 - 成都</p>
                         <p>专职客服：<a href="#">码妹妹</a></p>
@@ -203,6 +121,134 @@
             </div>
         </div>
 
+        <!-- 审核信息认证 -->
+        <div class="BorrowerInformation">
+            <h4>审核信息认证</h4>
+            <div>
+                <table class="table">
+                    <tr>
+                        <td>认证时态度 <span>优</span></td>
+                        
+                        <td>信贷知识掌握情况<span>优</span></td>
+                        
+                        <td>借款感言<span>给我2000度过难关</span></td>
+    
+                    </tr>
+                    <tr>
+                        <td>审核员认证意见<span>啊啊啊啊啊</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 材料信息 -->
+        <div class="Material">
+            <h4>材料信息</h4>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>材料类型</td>
+                            <td>材料数量</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>本人身份证</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- 还款情况 -->
+        <div class="Repayment">
+            <h4>还款情况</h4>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>还款状态</td>
+                            <td>最近一周</td>
+                            <td>最近1月</td>
+                            <td>最近6月</td>
+                            <td>6个月前</td>
+                            <td>总计[?]</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>提前还款</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>准时还款</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>逾期还款</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>逾期未还</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 投标记录 -->
+        <div class="tenderRecords">
+            <h4>投标记录</h4>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>投标人</td>
+                            <td>年利率</td>
+                            <td>有效金额(￥)</td>
+                            <td>投标时间</td>
+                            <td>类型</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>si*****</td>
+                            <td>10%</td>
+                            <td class="textInfo">1,000.00</td>
+                            <td>2016-05-11 06:42:11</td>
+                            <td>手动投标</td>
+                        </tr>
+                        <tr>
+                            <td>xia*****</td>
+                            <td>10%</td>
+                            <td class="textInfo">1,000.00</td>
+                            <td>2016-05-12 13:44:01</td>
+                            <td>手动投标</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         
     </section>
 
@@ -210,44 +256,15 @@
 
 
 
-    <footer>
-        <div class="container">
-            <div class="col-sm-8 left">
-                <p>专业Java培训、PHP培训、Android培训机构</p>
-
-                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
-
-                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625
-                </p>
-                <p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
-
-                <a href="#">蜀ICP备14030149号-1</a>  <a href="#">蜀公网安备510114990541</a>
-            </div>
-            <div class="col-sm-4 right row">
-                <div class="col-sm-6">
-                    <p>官方微博:</p>
-                    <a href="#"><img src="./images/tecent.png" alt=""></a>
-                    <a href="#"><img src="./images/sina.png" alt=""></a>
-
-                </div>
-                <div class="col-sm-6">
-                    <p>官方微信:</p>
-                    <a href="#"><img src="./images/wx.jpg" alt=""></a>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
 
     <!-- 引入jquery -->
-    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
     <!-- 引入popper.min.js -->
-    <script src="./lib/popper/popper.min.js"></script>
+    <script src="../lib/popper/popper.min.js"></script>
     <!-- 引入bootstrap.min.js -->
-    <script src="./lib/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="../lib/bootstrap4/js/bootstrap.min.js"></script>
     <!-- 引入index.js -->
-    <script src="./js/borrowInfo.js"></script>
+    <script src="../js/borrowInfo.js"></script>
 
 </body>
 

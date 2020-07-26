@@ -28,9 +28,16 @@ $(function () {
             default:
                 //如果匹配不到，默认加载首页
                 $("#main").load("./pages/home.html");
+                hash = '#home'
         }
+        bgactive(hash)
     }
 
+
+    function bgactive(hash){
+        $('#nav .nav-item a').removeClass('active')
+        $(`#nav .nav-item a[href="${hash}"]`).addClass('active')
+    }
 
 
 

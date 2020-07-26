@@ -1,92 +1,9 @@
-body {
-    user-select: none;
-}
-
-#header-nav {
-    background: #333;
-
-    svg {
-        width: 25px;
-        margin-bottom: 7px;
-        height: 25px;
-    }
-
-    ul {
-        li {
-            margin-left: 5px;
-            margin-right: 5px;
-
-            a {
-                color: #fff;
-                padding: 10px 15px;
-                font-size: 14px;
-
-                &.active {
-                    color: #00a8ff;
-                    font-weight: bold;
-                }
-
-                &:hover {
-                    color: #00a8ff;
-                }
-            }
-        }
-    }
-
-    em {
-        font-size: 24px;
-    }
-
-    .navbar-brand {
-        height: 50px;
-    }
-
-    nav {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
-
-
-#nav {
-    background: #f8f8f8;
-    border-bottom: 1px solid #e7e7e7;
-    margin-bottom: 10px;
-
-    nav {
-        padding-top: 0;
-        padding-bottom: 0;
-
-        ul a {
-            height: 80px;
-            line-height: 80px;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 15px;
-            padding-right: 15px;
-            font-size: 16px;
-            min-width: 80px;
-            text-align: center;
-
-            &.active {
-                background: #e7e7e7;
-            }
-
-            &:hover {
-                color: #0099dd;
-                background: #f0f0f0;
-            }
-        }
-    }
-}
-
-
 
 #main {
 
     /* 借款人 */
     >.row {
+        margin-bottom: 20px;
         >.row-left {
             >div {
                 border: 1px solid #ddd;
@@ -214,25 +131,132 @@ body {
     /* 借款人信息 */
     >.BorrowerInformation{
         border: 1px solid #ddd;
+        border-radius: 4px;
         margin-bottom: 20px;
         >h4{
             background: #f5f5f5;
             font-size: 14px;
             padding: 10px 15px;
             margin: 0;
+            border-bottom: 1px solid #ddd;
         }
         >div{
             padding: 15px;
 
             table{
+                margin-bottom: 0;
                 tr{
                     td{
                         border: none;
                         padding: 0;
+                        color: #999;
                         span{
                             color: #0099dd;
                             margin-left: 10px;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 材料信息 */
+    >.Material{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        >h4{
+            background: #f5f5f5;
+            font-size: 14px;
+            padding: 10px 15px;
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        >div{
+            padding: 15px;
+
+            table{
+                margin-bottom: 0;
+                tr{
+                    td{
+                        border: none;
+                        padding: 8;
+                        color: #333;
+                        font-weight: bold;
+                        
+                    }
+                }
+                tbody{
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+    }
+
+    /* 还款情况 */
+    >.Repayment{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        >h4{
+            background: #f5f5f5;
+            font-size: 14px;
+            padding: 10px 15px;
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        >div{
+            table{
+                thead{
+                    td{
+                        color: #333;
+                        padding: 8px;
+                        font-weight: bold;
+                    }
+                }
+                tbody{
+                    tr:nth-child(odd){
+                        background: #f9f9f9;
+                    }
+                    td{
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* 投标记录 */
+    >.tenderRecords{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        >h4{
+            background: #f5f5f5;
+            font-size: 14px;
+            padding: 10px 15px;
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        >div{
+            table{
+                thead{
+                    td{
+                        color: #333;
+                        padding: 8px;
+                        font-weight: bold;
+                    }
+                }
+                tbody{
+                    tr:nth-child(odd){
+                        background: #f9f9f9;
+                    }
+                    td{
+                        padding: 8px;
+                    }
+                    .textInfo{
+                        color: #0099dd;
                     }
                 }
             }
@@ -243,55 +267,3 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: #f8f8f8;
-
-    >div {
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .left {
-        p {
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #333;
-        }
-    }
-
-    .right {
-        img {
-            width: 100%;
-        }
-
-        >div {
-            padding: 0px 5px;
-        }
-    }
-
-}
