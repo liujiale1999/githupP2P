@@ -43,6 +43,7 @@
 }
 .content .tabpanel .menu {
   border: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 .content .tabpanel .menu > div {
   display: none;
@@ -85,11 +86,49 @@
 .content .tabpanel .menu .Offline .step p {
   font-size: 14px;
 }
-.content .tabpanel .menu .Offline form select {
+.content .tabpanel .menu .Offline form > div {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10%;
+}
+.content .tabpanel .menu .Offline form > div select {
   padding: 6px 12px;
   font-size: 14px;
   color: #555;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding-right: 30px;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  outline: none;
+}
+.content .tabpanel .menu .Offline form > div input {
+  outline: none;
+  margin-bottom: 15px;
+  width: 280px;
+  height: 34px;
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+}
+.content .tabpanel .menu .Offline form > div textarea {
+  width: 75%;
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+}
+.content .tabpanel .menu .Offline form > div:last-child {
+  margin-top: 15px;
+}
+.content .tabpanel .menu .Offline form > div:last-child input {
+  background: #337ab7;
+  color: #fff;
+  width: 84px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  border: none;
+  margin-left: 85px;
 }

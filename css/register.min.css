@@ -72,14 +72,19 @@ body {
 #login > div .loginform form > div p {
   color: #737373;
   font-weight: normal;
-  padding: 5px 0px 10px 85px;
+  padding: 5px 0px 10px 90px;
+  visibility: hidden;
+}
+#login > div .loginform form > div p.active {
+  visibility: visible;
+  color: red;
 }
 #login > div .loginform form > div input {
   width: 220px;
   height: 34px;
   text-indent: 10px;
 }
-#login > div .loginform form > div:nth-child(5) input {
+#login > div .loginform form > .sub input {
   width: 124px;
   height: 34px;
   background-color: #5cb85c;
@@ -89,7 +94,7 @@ body {
   padding: 0;
   text-align: center;
 }
-#login > div .loginform form > div:nth-child(5) a {
+#login > div .loginform form > .sub a {
   color: #337ab7;
   font-size: 14px;
   font-weight: normal;

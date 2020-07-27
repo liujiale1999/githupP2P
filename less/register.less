@@ -87,7 +87,12 @@ body {
                     p{
                         color: #737373;
                         font-weight: normal;
-                        padding: 5px 0px 10px 85px;
+                        padding: 5px 0px 10px 90px;
+                        visibility: hidden;
+                        &.active{
+                            visibility: visible;
+                            color: red;
+                        }
                     }
                     input{
                         width: 220px;
@@ -95,7 +100,7 @@ body {
                         text-indent: 10px;
                     }
                 }
-                >div:nth-child(5){
+                >.sub{
                     input{
                         width: 124px;
                         height: 34px;

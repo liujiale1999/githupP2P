@@ -23,10 +23,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">首页</a>
+                    <a class="navbar-brand" href="./index.html">首页</a>
                     <ul class="navbar-nav  mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">登录</a>
+                            <a class="nav-link" href="./login.html">登录</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">快速注册</a>
@@ -56,19 +56,29 @@
                 <form action="">
                     <p>请填写注册信息，点击“提交注册”即可完成注册！</p>
                     <div>
-                        &emsp;用户名&emsp;&emsp; <input type="text">
-                        <p class="msg">用户名为2~16位字母，数字，符号或中文</p>
+                        &emsp;用户名&emsp;&emsp; <input id="username" type="text">
+                        <p class="usernameMsg ">用户名为4到16位（字母，数字，下划线，减号）</p>
                     </div>
                     <div>
-                        &emsp;密&emsp;码&emsp;&emsp; <input type="password">
-                        <p class="msg">密码为6~16位字符组成,采用数字、字母、符号安全性更高</p>
+                        &emsp;密&emsp;码&emsp;&emsp; <input id="pwd" type="password">
+                        <p class="pwdMsg">密码为6~16位字符组成,采用数字、字母、符号安全性更高</p>
                     </div>
                     <div>
                         确认密码&emsp;&emsp;
-                        <input type="password">
-                        <p class="msg">请再次填写密码</p>
+                        <input id="confirmPwd" type="password">
+                        <p class="confirmPwdMsg">请再次填写密码</p>
                     </div>
-                    <div><input type="submit" value="同意协议并注册  "><a href="#">已有账号，马上登录</a></div>
+                    <div>
+                        &emsp;邮&emsp;箱&emsp;&emsp;
+                        <input id="email" type="text">
+                        <p class="emailMsg">邮箱格式不正确</p>
+                    </div>
+                    <div>
+                        &emsp;昵&emsp;称&emsp;&emsp;
+                        <input id="nickname" type="text">
+                        <p class="nicknameMsg">昵称格式不正确</p>
+                    </div>
+                    <div class="sub" ><input id="btn" type="button" value="同意协议并注册  "><a href="#">已有账号，马上登录</a></div>
                     <p><a href="#">《使用协议说明书》</a></p>
                 </form>
             </div>
