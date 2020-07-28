@@ -1,112 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>借款详情</title>
-    <!-- 引入bootstrap.min.css -->
-    <link rel="stylesheet" href="../lib/bootstrap4/css/bootstrap.min.css">
     <!-- 借款详情样式 -->
-    <link rel="stylesheet" href="../dist/css/borrowInfo.min.css">
-</head>
-
-<body>
-
-
-    <!-- 顶部导航 -->
-    <header id="header-nav">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-
-                <a class="navbar-brand" href="#">
-                    <svg t="1595426923420" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" p-id="587" width="32" height="32">
-                        <path
-                            d="M510.53923 269.706675l-29.328979 0c-77.536934 0-139.868561 30.370705-188.543144 79.005378-57.875129 57.876152-96.956216 141.845589-119.598912 232.014214-18.649755 74.217329-31.715329 152.255683-13.354146 210.488968 17.496489 55.577806 65.683978 93.909833 169.56593 93.909833l181.258227 0 181.27153 0c103.904465 0 152.068418-38.33305 169.564907-93.909833 18.34788-58.233286 5.281283-136.27164-13.359262-210.488968-22.63758-90.168626-61.718667-174.138062-119.599935-232.014214-48.667419-48.629557-111.014396-79.005378-188.534957-79.005378L510.53923 269.706675 510.53923 269.706675 510.53923 269.706675zM485.281987 136.202055l25.257244-0.278339 25.382087 0.278339 0.074701 0c8.091282 0.153496 16.662495 0.470721 25.372877 0.861624 43.651173 1.908466 98.051153 5.396917 150.556994 13.792121 51.906184 8.277524 102.406344 21.418822 139.329279 42.575678 33.153074 18.971074 61.053518 44.456514 79.982636 75.269287 17.383926 28.317952 27.467585 61.509912 27.467585 98.864682 0 20.697391-3.061732 40.784892-8.613168 59.579957l-0.036839 0c-5.825682 19.645432-14.499226 38.080294-25.368784 54.739718l0 0.041956c-4.900613 7.491625-11.413957 13.279445-18.830881 16.848737-7.41283 3.592828-16.011672 5.142114-24.936949 4.356214l-0.036839-0.079818c-9.06854-0.786922-17.206894-3.842515-23.795962-8.631588-6.616698-4.862751-12.014638-11.670807-15.504112-19.98517-29.347398-69.433372-70.485331-130.328277-124.651998-172.258249-48.444339-37.473473-107.180068-59.896158-177.047322-59.896158l-29.342282 0-29.333072 0c-69.864184 0-128.60503 22.422685-177.042205 59.896158-54.18304 41.929971-95.326089 102.824877-124.654045 172.258249-3.494591 8.314363-8.888438 15.159258-15.518438 19.98517-6.579859 4.789073-14.755052 7.873318-23.781636 8.631588l-0.036839 0.079818c-8.92937 0.786922-17.538445-0.800225-24.942065-4.356214-7.411807-3.569292-13.926174-9.357112-18.825764-16.848737l0-0.041956c-10.869558-16.659425-19.544125-35.093263-25.3739-54.739718l-0.036839 0c-5.547343-18.789948-8.609075-38.877449-8.609075-59.579957 0-37.354769 10.083659-70.546729 27.463492-98.864682 18.932188-30.812773 46.791699-56.261375 79.982636-75.269287 36.963866-21.156856 87.428212-34.298154 139.333372-42.575678 52.505841-8.395204 106.890472-11.883655 150.558018-13.792121L485.281987 136.202055 485.281987 136.202055 485.281987 136.202055zM343.575568 517.453199c0-92.246961 74.752518-167.014828 166.963663-167.014828 92.224448 0 166.971849 74.766844 166.971849 167.014828 0 92.212168-74.747401 166.973896-166.971849 166.973896C418.328086 684.427094 343.575568 609.665367 343.575568 517.453199L343.575568 517.453199zM343.575568 517.453199"
-                            p-id="588" fill="#ffffff"></path>
-                    </svg>
-                    <em>028-86261949</em>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#home">首页</a>
-                        </li>
-                        <li class="nav-item login-status">
-                            <a class="nav-link" href="./register.html">注册</a>
-                        </li>
-
-                        <li class="nav-item login-status">
-                            <a class="nav-link" href="./login.html">登录</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">快速充值</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">帮助</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">联系客服</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-    </header>
-
-
-    <!-- 网页导航 -->
-    <section id="nav">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="/dist/images/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link active" href="#home">首页</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#invest">我要投资</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#borrow">我要借款</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#personal">个人中心</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">新手指引</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">关于我们</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-    </section>
-
+    <link rel="stylesheet" href="/dist/css/borrowInfo.min.css">
 
     <!-- 内容部分 -->
-    <section id="main" class="container">
+    <section id="main" >
         <!-- 借款人信息 -->
         <div class="row">
             <div class="col-12 col-lg-3 row-left">
@@ -342,46 +239,8 @@
 
     </section>
 
- <footer>
-        <div class="container">
-            <div class="col-sm-8 left">
-                <p>专业Java培训、PHP培训、Android培训机构</p>
-
-                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
-
-                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625
-                </p>
-                <p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
-
-                <a href="#">蜀ICP备14030149号-1</a>  <a href="#">蜀公网安备510114990541</a>
-            </div>
-            <div class="col-sm-4 right row">
-                <div class="col-sm-6">
-                    <p>官方微博:</p>
-                    <a href="#"><img src="/dist/images/tecent.png" alt=""></a>
-                    <a href="#"><img src="/dist/images/sina.png" alt=""></a>
-
-                </div>
-                <div class="col-sm-6">
-                    <p>官方微信:</p>
-                    <a href="#"><img src="/dist/images/wx.jpg" alt=""></a>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-
-
-
-    <!-- 引入jquery -->
-    <script src="../lib/jquery/jquery.min.js"></script>
-    <!-- 引入popper.min.js -->
-    <script src="../lib/popper/popper.min.js"></script>
-    <!-- 引入bootstrap.min.js -->
-    <script src="../lib/bootstrap4/js/bootstrap.min.js"></script>
     <!-- 引入index.js -->
-    <script src="../js/borrowInfo.js"></script>
+    <script src="/js/borrowInfo.js"></script>
 
 </body>
 

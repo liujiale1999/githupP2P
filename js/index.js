@@ -110,6 +110,11 @@ $(function () {
                 $('#main').load('/pages/invest.html ')
                 break;
 
+            // 借款信息页面
+            case "#invest/borrowInfo":
+                loadInvestpage("#invest/borrowInfo")
+                break;
+
             case '#borrow':
                 $('#main').load('/pages/borrow.html')
                 break;
@@ -147,8 +152,23 @@ $(function () {
         $(`#nav .nav-item a[href="${hash}"]`).addClass('active')
     }
 
+    // 加载借款页面
+    function loadInvestpage(hash) {
+        var arr = hash.split('/')
+        var page = arr[arr.length-1]
 
-    // 加载页面
+        var isInvest = !!$('#investMain').length
+
+        if(isInvest){
+            $('#investMain').load(`/pages/${page}.html`)
+        }else{
+            $('#main').load('/pages/invest.html',function(){
+                $('#investMain').load(`/pages/${page}.html`)
+            })
+        }
+    }
+
+    // 加载个人中心页面
     function loadPersonalpage(hash) {
         var arr = hash.split('/')
         //得到二级路由的锚点
@@ -156,27 +176,41 @@ $(function () {
 
         //判断是否在个人中心页  
         var isPersonal = !!$('.personalPage').length
+
+
         if (isPersonal) {
+
+
             $('.personalPage .panel').load(`/pages/personal/${page}.html`)
-            //必须要页面加载完  执行
+
+            //加载页面也是ajax请求 必须要页面加载完  执行
+
             secondBgactive(hash)
         } else {
             $('#main').load('/pages/personal.html', function () {
 
                 $('.personalPage .panel').load(`/pages/personal/${page}.html`)
 
-                //必须要页面加载完  执行
+                //加载页面也是ajax请求 必须要页面加载完  执行
                 secondBgactive(hash)
 
             })
         }
+
     }
+
+
 
     // 二级路由激活样式
     function secondBgactive(hash) {
         $('.personalPage .myAccount li.active').removeClass('active')
         $(`.personalPage .myAccount li a[href="${hash}"]`).parent().addClass('active')
     }
+
+
+
+
+    // 登录注销
 
     loginStatus()
 
