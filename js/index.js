@@ -177,9 +177,7 @@ $(function () {
         //判断是否在个人中心页  
         var isPersonal = !!$('.personalPage').length
 
-
         if (isPersonal) {
-
 
             $('.personalPage .panel').load(`/pages/personal/${page}.html`)
 

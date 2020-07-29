@@ -6,24 +6,65 @@
             <img src="/dist/images/head_icon.jpg" alt="">
         </div>
         <div>
-            <p>昵 称：源代码教育</p>
-            <p>用户名：小强</p>
-            <p>最后登录时间：2016-10-25 15:30:10</p>
+            <p>昵 称：<span id="nickname">源代码教育</span></p>
+            <p>用户名：<span id="username">小强</span></p>
+            <p>最后登录时间：<span id="lastlogintime">2016-10-25 15:30:10</span></p>
         </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+            修改用户信息
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">修改</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">昵称</label>
+                              <input type="text"  class="form-control" id="newNickname" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                              <label for="newEmail">邮箱</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                          </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">关闭</button>
+                        <button id="modifyUserInfo" type="button" class="btn btn-primary btn-sm">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    
-    
+
+
     <ul class="money">
-        <li>总金额：<span>10000元</span></li>
-        <li>可用金额：<span>8000元</span></li>
-        <li>冻结金额：<span>2000元</span></li>
+        <li>总金额：<span id="totalmoney">10000</span>元</li>
+        <li>可用金额：<span id="usablemoney">8000</span>元</li>
+        <li>冻结金额：<span id="blockedmoney">2000元</span>元</li>
     </ul>
-    
+
     <div class="account">
         <button class="Recharge">账户充值</button>
         <button>账户提现</button>
     </div>
-    
+
     <div class="accountInfo">
         <div class="row">
             <div class="col-12 col-lg-4">
@@ -40,7 +81,7 @@
                 <div>
                     <img src="/dist/images/shouji.jpg" alt="">
                     <div>
-                        <h6>实名认证</h6>
+                        <h6>手机认证</h6>
                         <p>未认证<a href="#">查看</a></p>
                     </div>
                 </div>
@@ -50,7 +91,7 @@
                 <div>
                     <img src="/dist/images/youxiang.jpg" alt="">
                     <div>
-                        <h6>实名认证</h6>
+                        <h6>邮箱认证</h6>
                         <p>未认证<a href="#">查看</a></p>
                     </div>
                 </div>
@@ -60,7 +101,7 @@
                 <div>
                     <img src="/dist/images/baozhan.jpg" alt="">
                     <div>
-                        <h6>实名认证</h6>
+                        <h6>vip会员</h6>
                         <p>未认证<a href="#">查看</a></p>
                     </div>
                 </div>
@@ -68,7 +109,7 @@
             </div>
         </div>
     </div>
-    </div> 
+</div>
 </div>
 
 <script src="/js/account.js"></script>

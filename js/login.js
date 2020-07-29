@@ -15,6 +15,7 @@ $(function(){
             success:function(data){
                 if(data != 'fail'){
                     sessionStorage.setItem('username',user)
+                    sessionStorage.setItem('userid',data)
                     alert('登录成功')
                     location.href = '/index.html'
                 }else{

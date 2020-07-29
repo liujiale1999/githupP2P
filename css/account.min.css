@@ -8,6 +8,10 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
 }
+.box > .head > .btn {
+  height: 30px;
+  margin-left: 45%;
+}
 .box > .head > div:first-child {
   border: 1px solid #ddd;
   padding: 10px;
@@ -16,11 +20,11 @@
   width: 72px;
   height: 72px;
 }
-.box > .head > div:last-child {
+.box > .head > div:nth-child(2) {
   margin-left: 15px;
   margin-top: 5px;
 }
-.box > .head > div:last-child p {
+.box > .head > div:nth-child(2) p {
   margin-bottom: 10px;
   font-size: 14px;
 }

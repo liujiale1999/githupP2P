@@ -1,60 +1,3 @@
-body {
-  user-select: none;
-}
-#header-nav {
-  background: #000;
-}
-#header-nav svg {
-  width: 25px;
-  margin-bottom: 7px;
-  height: 25px;
-}
-#header-nav ul a {
-  color: #fff;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 14px;
-}
-#header-nav ul a:hover {
-  color: #00a8ff;
-}
-#header-nav em {
-  font-size: 24px;
-}
-#header-nav .navbar-brand {
-  height: 50px;
-}
-#header-nav nav {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#nav {
-  background: #f8f8f8;
-  border-bottom: 1px solid #e7e7e7;
-  margin-bottom: 10px;
-}
-#nav nav {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#nav nav ul a {
-  height: 80px;
-  line-height: 80px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 16px;
-  min-width: 80px;
-  text-align: center;
-}
-#nav nav ul a.active {
-  background: #e7e7e7;
-}
-#nav nav ul a:hover {
-  color: #0099dd;
-  background: #f0f0f0;
-}
 #main {
   /* 借款人 */
   /* 借款人信息 */
@@ -201,17 +144,20 @@ body {
 #main > .Material > div {
   padding: 15px;
 }
-#main > .Material > div table {
+#main > .Material > div > table {
   margin-bottom: 0;
 }
-#main > .Material > div table tr td {
+#main > .Material > div > table tr td {
   border: none;
   padding: 8;
   color: #333;
   font-weight: bold;
 }
-#main > .Material > div table tbody {
+#main > .Material > div > table tbody {
   background-color: #f9f9f9;
+}
+#main > .Material > div > table tbody td {
+  border-top: 2px solid #ddd;
 }
 #main > .Repayment {
   border: 1px solid #ddd;
@@ -225,7 +171,11 @@ body {
   margin: 0;
   border-bottom: 1px solid #ddd;
 }
+#main > .Repayment > div {
+  padding: 15px;
+}
 #main > .Repayment > div table thead td {
+  border: none;
   color: #333;
   padding: 8px;
   font-weight: bold;
@@ -248,7 +198,11 @@ body {
   margin: 0;
   border-bottom: 1px solid #ddd;
 }
+#main > .tenderRecords > div {
+  padding: 15px;
+}
 #main > .tenderRecords > div table thead td {
+  border: none;
   color: #333;
   padding: 8px;
   font-weight: bold;
@@ -261,23 +215,4 @@ body {
 }
 #main > .tenderRecords > div table tbody .textInfo {
   color: #0099dd;
-}
-footer {
-  background-color: #f8f8f8;
-}
-footer > div {
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-footer .left p {
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #333;
-}
-footer .right img {
-  width: 100%;
-}
-footer .right > div {
-  padding: 0px 5px;
 }

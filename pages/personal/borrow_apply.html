@@ -12,14 +12,14 @@
 
     <div class="LoanInformation">
         <h2>
-            借款信息<span>信用标</span>
+            借款信息<span class="borrowType">信用标</span>
         </h2>
 
-        <form action="">
+        <form>
             <div>
                 <label>借款金额</label>
                 <div>
-                    <input type="text">
+                    <input id="borrowmoney" type="text">
                     <span>元</span>
                 </div>
             </div>
@@ -27,15 +27,15 @@
             <div>
                 <label>借款利息</label>
                 <div>
-                    <input type="text">
+                    <input id="interest" type="text">
                     <span>%</span>
                 </div>
             </div>
             
             <div>
-                <label>借款利息</label>
+                <label>借款期限</label>
                 <div class="dropDownBox">
-                    <select>
+                    <select id="borrowtime">
                         <option>1</option>
                         <option>3</option>
                         <option>6</option>
@@ -51,8 +51,8 @@
                 <span>还款方式</span>
                 <div>
                     <label>
-                        <input type="radio" checked name="1"><span>按月分期</span>
-                        <input type="radio" name="1"><span>按月到期</span>
+                        <input id="repaytype" type="radio" checked name="1" value="0"><span>按月分期</span>
+                        <input id="repaytype" type="radio" name="1" value="1"><span>按月到期</span>
                     </label>
                 </div>
             </div>
@@ -60,7 +60,7 @@
             <div>
                 <label>最小投标</label>
                 <div>
-                    <input type="text">
+                    <input id="minbid" type="text">
                     <span>元</span>
                 </div>
             </div>
@@ -68,7 +68,7 @@
             <div>
                 <label>投标奖金</label>
                 <div>
-                    <input type="text" value="0">
+                    <input id="bouns" type="text" value="0">
                     <span>%</span>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             <div>
                 <label>招标天数</label>
                 <div class="dropDownBox">
-                    <select>
+                    <select id="days">
                         <option>1</option>
                         <option>3</option>
                         <option>6</option>
@@ -90,16 +90,16 @@
 
             <div>
                 <label>借款标题</label>
-                <input type="text">
+                <input id="title" type="text">
             </div>
 
             <div>
                 <label>借款描述</label>
-                <textarea></textarea>
+                <textarea id="info"></textarea>
             </div>
 
             <div>
-                <button>提交申请</button>
+                <button id="btn" type="button">提交申请</button>
             </div>
 
             <div class="formTip">

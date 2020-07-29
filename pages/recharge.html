@@ -80,7 +80,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
-                            <a class="nav-link active" href="/index.html">首页</a>
+                            <a class="nav-link " href="/index.html">首页</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/index.html#invest">我要投资</a>
@@ -89,7 +89,7 @@
                             <a class="nav-link" href="/index.html#borrow">我要借款</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/index.html#personal">个人中心</a>
+                            <a class="nav-link active" href="/index.html#personal">个人中心</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">新手指引</a>
@@ -164,13 +164,13 @@
                             <p>款或转账成功后，再选择你所汇款或转账的账号，并填写以下完整的信息后，提交您的线下充值申请。我们将会在下个工作日核对您的申请。</p>
                         </div>
 
-                        <form action="#">
+                        <form>
                             <div>
                                 &emsp;&emsp;银行&emsp;&emsp;
-                                <select>
-                                    <option>工商银行62170038233428412750(府城大道支行)</option>
-                                    <option>农业银行6217003834411112750(成都天府新谷支行)</option>
-                                    <option>招商银行6212303810028412750(成都高新天府大道支行)</option>
+                                <select class="bank">
+                                    <option value="工行:1">工商银行62170038233428412750(府城大道支行)</option>
+                                    <option value="农行:2">农业银行6217003834411112750(成都天府新谷支行)</option>
+                                    <option value="招行:3">招商银行6212303810028412750(成都高新天府大道支行)</option>
                                 </select>
                             </div>
                             <div>
@@ -183,14 +183,14 @@
                             </div>
                             <div>
                                 充值金额&emsp;&emsp;
-                                <input type="text">
+                                <input id="money" type="text">
                             </div>
                             <div>
                                 &emsp;&emsp;说明&emsp;&emsp;
                                 <textarea></textarea>
                             </div>
                             <div>
-                                <input type="button" value="确认提交">
+                                <input id="btn" type="button" value="确认提交">
 
                             </div>
 
