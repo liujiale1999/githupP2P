@@ -1,6 +1,9 @@
 $(function () {
     var type = location.search.split('=')[1] 
 
+    var btnClass = null
+    var btnText = null
+
     switch (type) {
         case '1':
             btnClass = 'btn-success'

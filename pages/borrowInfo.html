@@ -11,7 +11,7 @@
                     <h4>借款人</h4>
                     <div>
                         <img src="../dist/images/head_icon.jpg" alt="">
-                        <a href="#">zs</a>
+                        <a class="borrower" href="#">zs</a>
                         <p>籍贯： 四川 - 成都</p>
                         <p>专职客服：<a href="#">码妹妹</a></p>
                         <p>
@@ -29,35 +29,35 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 row-center">
-                <h4>zs借款<span>信</span></h4>
+                <h4><b>zs</b> 借款<span>信</span></h4>
                 <table class="table">
                     <tr>
                         <td>借款金额</td>
-                        <td>2,000.00</td>
+                        <td><span class="borrowmoney">2,000.00</span></td>
                     </tr>
                     <tr>
                         <td>年化利率</td>
-                        <td>10.00%</td>
+                        <td><span class="interest">10.00</span>%</td>
                     </tr>
                     <tr>
                         <td>借款期限</td>
-                        <td>3月</td>
+                        <td><span class="borrowtime">3</span>月</td>
                     </tr>
                     <tr>
                         <td>投标奖励</td>
-                        <td>0.00</td>
+                        <td><span class="bouns">0.00</span></td>
                     </tr>
                     <tr>
                         <td>还款方式</td>
-                        <td>按月分期还款</td>
+                        <td><span class="repaytype">按月分期还款</span></td>
                     </tr>
                     <tr>
                         <td>最小投标</td>
-                        <td>20.00</td>
+                        <td><span class="minbid">20.00</span></td>
                     </tr>
                     <tr>
-                        <td>剩余时间</td>
-                        <td></td>
+                        <td><button class="investBtn btn-danger">点击投资</button></td>
+                        <td><input class="investMoney" type="text"></td>
                     </tr>
                 </table>
             </div>
@@ -75,9 +75,9 @@
                     </tr>
                     <tr>
                         <td>
-                            <div>
-                                <div></div>
-                            </div>
+                            <div class="progress">
+                                <div class="progressBar progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                              </div>
                         </td>
                     </tr>
                 </table>
