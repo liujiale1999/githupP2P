@@ -1,6 +1,11 @@
 $(function () {
     var row = 5
 
+    //轮播间隔时间
+    $('.carousel').carousel({
+        interval: 4000
+    });
+
     getborrowlist(1)
 
     function getborrowlist(pageIndex) {
